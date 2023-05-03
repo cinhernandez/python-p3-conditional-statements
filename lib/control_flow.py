@@ -10,12 +10,12 @@ def admin_login(username, password):
 
 
 def hows_the_weather(temperature):
-    if temperature == 33:
-         return "It's brisk out there!"
-    elif temperature == 55:
+    if temperature > 85:
+         return "It's too dang hot out there!"
+    elif 65 >= temperature >= 40:
          return "It's a little chilly out there!"
-    elif temperature == 99:
-        return "It's too dang hot out there!"
+    elif temperature < 40:
+        return "It's brisk out there!"
     else:
          return "It's perfect out there!"
 
